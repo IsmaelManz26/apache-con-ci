@@ -29,6 +29,6 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: 
+                  tags: |
                     ${{ secrets.DOCKER_USERNAME }}/docker-github-actions:latest
                     ${{ secrets.DOCKER_USERNAME }}/docker-github-actions:${{ github.sha }}
